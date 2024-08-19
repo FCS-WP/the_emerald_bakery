@@ -1,0 +1,74 @@
+.trx-addons-accordion {
+  width: auto;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+.trx-addons-accordion h1, .trx-addons-accordion h2, .trx-addons-accordion h3, .trx-addons-accordion h4, .trx-addons-accordion h5, .trx-addons-accordion h6 {
+  margin: 0;
+}
+.trx-addons-accordion .trx-addons-accordion-tab-title {
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  outline: 0;
+}
+.trx-addons-accordion.trx-addons-toggle-icon-align-left .trx-addons-accordion-tab-title {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.trx-addons-accordion-toggle-icon {
+  display: inline-flex;
+  transition: none;
+  position: relative;
+  z-index: 10;
+}
+
+.trx-addons-accordion-toggle-icon-open,
+.trx-addons-accordion-tab-show .trx-addons-accordion-toggle-icon-close,
+.trx-addons-accordion-tab-active-default .trx-addons-accordion-toggle-icon-close {
+  display: none;
+}
+
+.trx-addons-accordion-tab-show .trx-addons-accordion-toggle-icon-open,
+.trx-addons-accordion-tab-active-default .trx-addons-accordion-toggle-icon-open {
+  display: inline-block;
+}
+
+.trx-addons-accordion-tab-content {
+  display: none;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.trx-addons-accordion-tab-content p:last-child {
+  margin: 0;
+}
+.trx-addons-accordion-tab-content.trx-addons-accordion-tab-active {
+  display: block;
+}
+
+.trx-addons-accordion-item {
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.trx-addons-accordion-title-icon {
+  display: flex;
+  align-items: center;
+}
+
+.trx-addons-accordion-tab-icon {
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+
+/*# sourceMappingURL=Accordion.css.map */

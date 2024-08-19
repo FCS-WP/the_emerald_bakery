@@ -1,0 +1,175 @@
+.trx-addons-info-box-container {
+  transition: all 0.25s linear 0s;
+}
+.trx-addons-info-box-container h1, .trx-addons-info-box-container h2, .trx-addons-info-box-container h3, .trx-addons-info-box-container h4, .trx-addons-info-box-container h5, .trx-addons-info-box-container h6 {
+  margin: 0;
+}
+
+.trx-addons-info-box-container:not(.elementor-grid) {
+  display: block;
+}
+
+.trx-addons-info-box .trx-addons-info-box-icon {
+  display: inline-block;
+  line-height: 1;
+  max-width: 100%;
+}
+
+.trx-addons-info-box .trx-addons-info-box-icon .fa {
+  transition: all 0.25s linear 0s;
+  width: 1em;
+  height: 1em;
+}
+
+.trx-addons-info-box .trx-addons-info-box-icon img {
+  vertical-align: middle;
+}
+
+.trx-addons-info-box-divider-wrap {
+  font-size: 0;
+  line-height: 0;
+}
+
+.trx-addons-info-box-divider {
+  display: inline-block;
+}
+
+.trx-addons-info-box .trx-addons-info-box-title,
+.trx-addons-info-box .trx-addons-info-box-subtitle {
+  margin: 0;
+}
+
+.trx-addons-info-box-equal-height .trx-addons-info-box {
+  height: 100%;
+}
+
+.trx-addons-info-box-left .trx-addons-info-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.trx-addons-info-box-left .trx-addons-info-box .trx-addons-info-box-icon-wrap {
+  display: flex;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.trx-addons-info-box-left .trx-addons-info-box .trx-addons-info-box-icon,
+.trx-addons-info-box-left .trx-addons-info-box img {
+  width: 100%;
+}
+
+.trx-addons-info-box-right .trx-addons-info-box {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.trx-addons-info-box-right .trx-addons-info-box .trx-addons-info-box-icon-wrap {
+  display: flex;
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+.trx-addons-info-box-right .trx-addons-info-box .trx-addons-info-box-icon,
+.trx-addons-info-box-right .trx-addons-info-box img {
+  width: 100%;
+}
+
+.trx-addons-info-box-carousel .trx-addons-info-box-content-wrap {
+  overflow: hidden;
+}
+
+.trx-addons-info-box-description p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .trx-addons-info-box-tablet-top .trx-addons-info-box {
+    display: inline-block;
+  }
+
+  .trx-addons-info-box-tablet-top .trx-addons-info-box .trx-addons-info-box-icon-wrap {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .trx-addons-info-box-tablet-top .trx-addons-info-box .trx-addons-info-box-icon {
+    margin-right: auto;
+  }
+
+  .trx-addons-info-box-tablet-left .trx-addons-info-box {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .trx-addons-info-box-tablet-left .trx-addons-info-box .trx-addons-info-box-icon-wrap {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .trx-addons-info-box-tablet-left .trx-addons-info-box .trx-addons-info-box-icon,
+  .trx-addons-info-box-tablet-left .trx-addons-info-box img {
+    width: 100%;
+  }
+
+  .trx-addons-info-box-tablet-right .trx-addons-info-box {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .trx-addons-info-box-tablet-right .trx-addons-info-box .trx-addons-info-box-icon-wrap {
+    display: flex;
+    margin-left: 20px;
+  }
+
+  .trx-addons-info-box-tablet-right .trx-addons-info-box .trx-addons-info-box-icon,
+  .trx-addons-info-box-tablet-right .trx-addons-info-box img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .trx-addons-info-box-mobile-top .trx-addons-info-box {
+    display: inline-block;
+  }
+
+  .trx-addons-info-box-mobile-top .trx-addons-info-box .trx-addons-info-box-icon-wrap {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .trx-addons-info-box-mobile-top .trx-addons-info-box .trx-addons-info-box-icon {
+    margin-right: auto;
+  }
+
+  .trx-addons-info-box-mobile-left .trx-addons-info-box {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .trx-addons-info-box-mobile-left .trx-addons-info-box .trx-addons-info-box-icon-wrap {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .trx-addons-info-box-mobile-left .trx-addons-info-box .trx-addons-info-box-icon,
+  .trx-addons-info-box-mobile-left .trx-addons-info-box img {
+    width: 100%;
+  }
+
+  .trx-addons-info-box-mobile-right .trx-addons-info-box {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .trx-addons-info-box-mobile-right .trx-addons-info-box .trx-addons-info-box-icon-wrap {
+    display: flex;
+    margin-left: 20px;
+  }
+
+  .trx-addons-info-box-mobile-right .trx-addons-info-box .trx-addons-info-box-icon,
+  .trx-addons-info-box-mobile-right .trx-addons-info-box img {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=InfoBox.css.map */

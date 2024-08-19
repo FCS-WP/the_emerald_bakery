@@ -1,0 +1,424 @@
+@import "../../../css/_mixins.scss";
+@import "../../../css/_trx_addons.vars.scss";
+@import "../../../css/_trx_addons.colors.scss";
+
+#trx_addons_elementor_templates_library_modal {
+
+	--trx-addons-elementor-templates-library-columns: 3;
+	@media (max-width: 1439px) {
+		--trx-addons-elementor-templates-library-columns: 2;
+	}
+
+	--trx-addons-elementor-templates-library-sidebar-width: 15%;
+	@media (max-width: 1679px) {
+		--trx-addons-elementor-templates-library-sidebar-width: 20%;
+	}
+	@media (max-width: 1023px) {
+		--trx-addons-elementor-templates-library-sidebar-width: 25%;
+	}
+
+	.dialog-widget-content {
+		@include abs-cc;
+		left: 50% !important;
+		top: 50% !important;
+		width: 90vw;
+		height: 90vh;
+		overflow: hidden;
+		background-color: #fff;
+		border-radius: none;
+	}
+	.dialog-header {
+		@include abs-lt;
+		@include border-box;
+		width: 100%;
+		background-color: $background_color;
+		border: 1px solid $border_color;
+		padding: 1em 1.5em;
+		font-size: 1.2em;
+		color: #333;
+	}
+	.trx_addons_button_close_icon {
+		&:before,
+		&:after {
+			border-color: #333;
+		}
+	}
+	p {
+		margin: 1em 0;
+	}
+	.dialog-message {
+		padding: 0;
+	}
+	.trx_addons_elementor_templates_library_notices p {
+		margin: 0;
+	}
+}
+
+#trx_addons_elementor_templates_library {
+    text-align: left;
+	width: 100%;
+	@include border-box;
+
+	input[type=checkbox]:checked:before {
+		margin: -5px 0 0 -9px;
+	}
+	label {
+		cursor: pointer;
+	}
+}
+.trx_addons_elementor_templates_library_content {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.trx_addons_elementor_templates_library_tabs {
+	@include abs-lt(0, 6em);
+	@include border-box;
+	width: 100%;
+	@include flex;
+	@include flex-wrap(nowrap);
+	@include flex-justify-content(center);
+	@include flex-align-items(flex-start);
+}
+.trx_addons_elementor_templates_library_tab {
+	@include flex;
+	@include flex-direction(column);
+	@include flex-justify-content(center);
+	@include flex-align-items(center);
+	border: 1px solid $tab_border_color;
+	background-color: $tab_background_color;
+	color: $tab_text_color;
+	padding: 1em 2em;
+	margin-right: 0.5em;
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: pointer;
+
+	&:last-child {
+		margin-right: 0;
+	}
+	&.trx_addons_elementor_templates_library_tab_active {
+		background-color: $tab_background_active;
+		color: var(--e-a-color-primary-bold);
+	}
+
+}
+.trx_addons_elementor_templates_library_tab_content {
+	@include flex;
+	@include flex-direction(row);
+	@include flex-justify-content(flex-start);
+	@include flex-align-items(flex-start);
+	@include flex-wrap(nowrap);
+	@include border-box;
+	width: 100%;
+	height: 100%;
+	padding: 11em 0 2em 2em;
+
+	&.with_pagination {
+		padding-bottom: 4.75em;
+	}
+
+	&:not(.trx_addons_elementor_templates_library_tab_content_active) {
+		display: none;
+	}
+}
+.trx_addons_elementor_templates_library_sidebar {
+	@include flex-shrink(0);
+	@include border-box;
+	width: var(--trx-addons-elementor-templates-library-sidebar-width);
+	padding-right: 2em;
+}
+.trx_addons_elementor_templates_library_search {
+	@include border-box;
+	width: 100%;
+
+	input[type="text"] {
+		width: 100%;
+		padding: 0.75em 0.5em;
+	}
+}
+.trx_addons_elementor_templates_library_categories {
+	@include border-box;
+	width: 100%;
+	margin-top: 1em;
+}
+.trx_addons_elementor_templates_library_category {
+	display: block;
+	padding: 0.25em 2em 0.25em 0;
+	position: relative;
+	color: $text_dark;
+
+	&:hover {
+		color: $accent_hover;
+	}
+	&.trx_addons_elementor_templates_library_category_active {
+		color: $accent_color;
+	}
+}
+.trx_addons_elementor_templates_library_category_total {
+	@include abs-rc;
+	//font-size: 0.8em;
+}
+
+.trx_addons_elementor_templates_library_items {
+	@include flex-shrink(1);
+	@include border-box;
+	width: calc( 100% - var(--trx-addons-elementor-templates-library-sidebar-width) );
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.trx_addons_elementor_templates_library_list {
+	@include border-box;
+	width: 100%;
+	height: 100%;
+	@include flex;
+	@include flex-direction(row);
+	@include flex-wrap(wrap);
+	@include flex-justify-content(flex-start);
+	@include flex-align-items(flex-start);
+//	margin-right: -2em;
+}
+.trx_addons_elementor_templates_library_column {
+	@include border-box;
+	padding: 0 2em 2em 0;
+	width: calc( 100% / var(--trx-addons-elementor-templates-library-columns) );
+}
+
+.trx_addons_elementor_templates_library_item {
+	@include flex;
+	@include flex-direction(column);
+	@include flex-justify-content(flex-start);
+	@include flex-align-items(flex-start);
+	width: 100%;
+	@include border-box;
+	@include border-radius(4px);
+	border: 1px solid $border_color;
+	position: relative;
+	margin-bottom: 2em;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+.trx_addons_elementor_templates_library_item_preview {
+	@include flex;
+	@include flex-direction(column);
+	@include flex-justify-content(center);
+	@include flex-align-items(center);
+	@include border-box;
+	overflow: hidden;
+	width: 100%;
+	padding: 1em;
+	position: relative;
+	
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+.trx_addons_elementor_templates_library_item_favorite {
+	@include abs-rt(-1.25em, -1.5em);
+	@include border-box;
+	@include border-radius(3em);
+	padding: 2em 1em 0.5em;
+	background-color: #aaa;
+	color: #fff;
+	@include rotate(45deg);
+
+	&:before {
+		@include rotate(-45deg);
+		font-size: 1.25em;
+	}
+	&:hover {
+		color: $accent_color;
+	}
+	&.trx_addons_elementor_templates_library_item_favorite_on {
+		background-color: $accent_color;
+		color: #ffff00;
+	}
+}
+.trx_addons_elementor_templates_library_item_title {
+	font-size: 1em;
+	@include border-box;
+	width: 100%;
+	padding: 1em;
+	color: $text_dark;
+	background-color: $background_light;
+	border-top: 1px solid $border_color;
+}
+.trx_addons_elementor_templates_library_item_import {
+	@include abs-cc;
+	@include border-box;
+	padding: 1em 1.5em;
+	background-color: $info_bg_color;
+	color: $info_dark;
+	@include border-radius(4px);
+	text-align: center;
+	opacity: 0;
+	margin-top: 5em;
+	@include transition-properties(opacity, margin-top, background-color, color);
+
+	&:hover {
+		background-color: $info_dark;
+		color: $info_bg_color;
+	}
+	&:before {
+		margin-right: 0.5em;
+	}
+
+	.trx_addons_elementor_templates_library_item:hover &,
+	.trx_addons_elementor_templates_library_item_loading & {
+		opacity: 1;
+		margin-top: 0;
+	}
+	.trx_addons_elementor_templates_library_item_loading & {
+		pointer-events: none;
+	}
+
+	@media (max-width: 1439px) {
+		opacity: 1;
+		margin-top: 0;
+	}
+}
+
+.trx_addons_elementor_templates_library_pagination {
+	@include abs-lb;
+	@include border-box;
+	width: 100%;
+	padding: 1em 0;
+	text-align: center;
+}
+.trx_addons_elementor_templates_library_page {
+	display: inline-block;
+	padding: 0.5em 1em;
+	margin-right: 0.5em;
+	border: 1px solid $tab_border_color;
+	background-color: $tab_background_color;
+	color: $tab_text_color;
+	text-decoration: none;
+	cursor: pointer;
+
+	&:last-child {
+		margin-right: 0;
+	}
+	&:hover {
+		color: var(--e-a-color-primary-bold);
+	}
+	&.trx_addons_elementor_templates_library_page_active {
+		background-color: $tab_background_active;
+		color: var(--e-a-color-primary-bold);
+	}
+}
+
+.trx_addons_elementor_templates_library_notice {
+
+	&.dialog-widget,
+	.elementor-panel & {
+		display: inline-block;
+		padding: 10px;
+		line-height: 1.4;
+		font-size:12px;
+		font-style:normal;
+		color: rgba(0, 0, 0, 0.7) !important;
+		background: #EFEFEF !important;
+		border-radius: 4px;
+
+		a {
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	
+		&.yellow {
+			background: #FDEAB9 !important;
+		}
+		&.blue {
+			background: #E6F6FF !important;
+			margin: 2px 0;
+			float: right;
+			padding: 6px 8px;
+		}
+		&.description {
+			width: 100%;
+			background: #E6F6FF !important;
+		
+			a {
+				color: currentColor;
+			}
+		}
+
+	}
+
+	&.dialog-widget {
+		padding: 10px !important;
+		left: 10px !important;
+		width: 260px !important;
+	}
+
+	.elementor-panel &.desc {
+		background: transparent !important;
+		border: 1px solid rgba(255, 255, 255, .3) !important;
+		color: inherit !important;
+	}
+	.elementor-panel &.blue:hover {
+		border-bottom-color: transparent;
+	}
+}
+
+.hint--medium:after {
+	width: 180px !important;
+}
+
+@media (prefers-color-scheme: dark) {
+	.elementor-panel .trx_addons_elementor_templates_library_notice {
+		background: #EFEFEF;;
+		border: none;
+	}
+
+	[class*=hint--][aria-label]:after {
+		background: #34383C;
+		border: 1px solid rgba(255,255,255,.3);
+		border-radius: 4px;
+	}
+
+	.hint--top-right:before {
+		border-top-color: #727477 !important;
+	}
+}
+
+
+.trx_addons_elementor_templates_library_description_wide .elementor-control-field-description {
+	display: block;
+}
+
+#trx_addons_elementor_templates_library,
+#trx_addons_elementor_templates_library_modal .dialog-message,
+#trx_addons_elementor_templates_library_modal .dialog-content {
+	height: 100%;
+}
+
+
+#elementor-panel-page-settings-controls > .elementor-control[class*="trx_addons_"],
+#elementor-kit-panel-content-controls > .elementor-control[class*="trx_addons_"] {
+	position: relative;
+}
+
+#elementor-panel-page-settings-controls > .elementor-control[class*="trx_addons_"]:after,
+#elementor-kit-panel-content-controls > .elementor-control[class*="trx_addons_"]:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 5px;
+	height: 100%;
+	background: #C5B1CE;
+}
+
+.sub-arrow + .sub-arrow {
+	display: none;
+}

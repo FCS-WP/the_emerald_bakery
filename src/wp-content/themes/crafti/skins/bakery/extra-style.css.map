@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAKA,mCAAoC;ECsClC,kBAAiB,EAAE,8BAAG;EAAtB,cAAiB,EAAE,8BAAG;EAEvB,UAAU,EAAE,8BAAG",
+"sources": ["extra-style.scss","../../css/_mixins.scss"],
+"names": [],
+"file": "extra-style.css"
+}

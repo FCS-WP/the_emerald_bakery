@@ -1,0 +1,211 @@
+:root {
+  --trx-addons-tabs-triangle-size: 15px;
+}
+
+.trx-addons-tabs-nav {
+  margin: 0;
+  padding: 0;
+}
+
+.trx-addons-tabs-nav li {
+  list-style: none;
+  transition: all .3s ease;
+  position: relative;
+  cursor: pointer;
+}
+.trx-addons-tabs-nav li i {
+  position: relative;
+}
+.trx-addons-tabs-nav li img {
+  width: auto;
+  max-height: 2em;
+  max-width: none;
+  vertical-align: text-bottom;
+  position: relative;
+}
+
+.trx-addons-tabs-nav li span.trx-addons-tabs-title {
+  font-size: 16px;
+}
+
+.trx-addons-tabs-horizontal .trx-addons-tabs-nav {
+  display: flex;
+}
+
+.trx-addons-tabs-horizontal.trx-addons-tabs-align-left .trx-addons-tabs-nav {
+  justify-content: flex-start;
+}
+
+.trx-addons-tabs-horizontal.trx-addons-tabs-align-center .trx-addons-tabs-nav {
+  justify-content: center;
+}
+
+.trx-addons-tabs-horizontal.trx-addons-tabs-align-right .trx-addons-tabs-nav {
+  justify-content: flex-end;
+}
+
+.trx-addons-tabs-horizontal-full-width .trx-addons-tabs-nav {
+  display: flex;
+}
+
+.trx-addons-tabs-align-left .trx-addons-tabs-nav li {
+  text-align: left;
+}
+
+.trx-addons-tabs-align-center .trx-addons-tabs-nav li {
+  text-align: center;
+}
+
+.trx-addons-tabs-align-right .trx-addons-tabs-nav li {
+  text-align: right;
+}
+
+.trx-addons-tabs-align-left .trx-addons-tabs-nav {
+  text-align: left;
+}
+
+.trx-addons-tabs-align-center .trx-addons-tabs-nav {
+  text-align: center;
+}
+
+.trx-addons-tabs-align-right .trx-addons-tabs-nav {
+  text-align: right;
+}
+
+.trx-addons-tabs-horizontal-full-width .trx-addons-tabs-nav li {
+  flex: 1;
+}
+
+.trx-addons-tabs-vertical {
+  display: flex;
+}
+
+.trx-addons-tabs-vertical .trx-addons-tabs-nav li {
+  display: flex;
+  align-items: center;
+}
+
+.trx-addons-tabs .trx-addons-tabs-content.active {
+  display: block;
+}
+
+.trx-addons-tabs .trx-addons-tabs-content.active.trx-addons-tabs-image-left,
+.trx-addons-tabs .trx-addons-tabs-content.active.trx-addons-tabs-image-right {
+  display: flex;
+}
+
+.trx-addons-tabs .trx-addons-tabs-content.trx-addons-tabs-image-has-no .trx-addons-tabs-content-element {
+  width: 100% !important;
+}
+
+.trx-addons-tabs .trx-addons-tabs-content .trx-addons-tabs-content-element {
+  width: 70%;
+}
+
+.trx-addons-tabs .trx-addons-tabs-content .trx-addons-tabs-content-thumb {
+  width: 30%;
+}
+
+.trx-addons-tabs .trx-addons-tabs-content.active.trx-addons-tabs-image-left .trx-addons-tabs-content-element {
+  order: 2;
+}
+
+.trx-addons-tabs .trx-addons-tabs-content.active.trx-addons-tabs-image-left .trx-addons-tabs-content-thumb {
+  order: 1;
+}
+
+.trx-addons-tabs .trx-addons-tabs-content {
+  display: none;
+}
+
+.trx-addons-tabs-btn {
+  text-decoration: none;
+  transition: all .3s ease;
+  display: inline-block;
+}
+
+.trx-addons-tabs-content-title {
+  margin: 0 0 20px 0;
+}
+
+.trx-addons-tabs-content-description {
+  margin: 0 0 20px 0;
+}
+
+.trx-addons-tabs-nav-item-with-triangle.active {
+  position: relative;
+  z-index: 1;
+}
+.trx-addons-tabs-nav-item-with-triangle.active:before {
+  content: ' ';
+  height: var(--trx-addons-tabs-triangle-size);
+  width: var(--trx-addons-tabs-triangle-size);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  position: absolute;
+  z-index: -1;
+}
+.trx-addons-tabs-vertical .trx-addons-tabs-nav-item-with-triangle.active:before {
+  top: 50%;
+  right: calc( var(--trx-addons-tabs-triangle-size) / 4 );
+  transform: translateY(-50%) rotate(45deg);
+}
+.trx-addons-tabs-horizontal .trx-addons-tabs-nav-item-with-triangle.active:before {
+  left: 50%;
+  bottom: calc( var(--trx-addons-tabs-triangle-size) / 1.25 );
+  transform: translateX(-50%) rotate(135deg);
+}
+
+@media (max-width: 575px) {
+  .trx-addons-tabs-vertical {
+    flex-direction: column;
+  }
+  .trx-addons-tabs-vertical .trx-addons-tabs-nav li {
+    width: 100% !important;
+    justify-content: center;
+  }
+  .trx-addons-tabs-vertical .trx-addons-tabs-nav-item-with-triangle.active:before {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .trx-addons-tabs-horizontal-full-width .trx-addons-tabs-nav {
+    overflow-x: scroll;
+  }
+
+  .trx-addons-tabs-horizontal .trx-addons-tabs-nav {
+    overflow-x: scroll;
+  }
+
+  .trx-addons-tabs .trx-addons-tabs-content.active.trx-addons-tabs-image-left,
+  .trx-addons-tabs .trx-addons-tabs-content.active.trx-addons-tabs-image-right {
+    flex-direction: column;
+  }
+
+  .trx-addons-tabs .trx-addons-tabs-content.active.trx-addons-tabs-image-left .trx-addons-tabs-content-element,
+  .trx-addons-tabs .trx-addons-tabs-content.active.trx-addons-tabs-image-right .trx-addons-tabs-content-element {
+    width: 100%;
+  }
+
+  .trx-addons-tabs .trx-addons-tabs-content.trx-addons-tabs-image-has-no.trx-addons-tabs-image-left .trx-addons-tabs-content-element,
+  .trx-addons-tabs .trx-addons-tabs-content.trx-addons-tabs-image-has-no.trx-addons-tabs-image-right .trx-addons-tabs-content-element {
+    width: 100%;
+  }
+
+  .trx-addons-tabs .trx-addons-tabs-content.active.trx-addons-tabs-image-left .trx-addons-tabs-content-thumb,
+  .trx-addons-tabs .trx-addons-tabs-content.active.trx-addons-tabs-image-right .trx-addons-tabs-content-thumb {
+    width: 100%;
+  }
+
+  .trx-addons-tabs .trx-addons-tabs-content.active .trx-addons-tabs-content-thumb {
+    width: 100%;
+  }
+
+  .trx-addons-tabs-content-thumb {
+    margin-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=Tabs.css.map */

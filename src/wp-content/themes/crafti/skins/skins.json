@@ -1,0 +1,17 @@
+{
+    "default": {
+        "title": "Default",
+        "description": "",
+        "version": "1.2",
+        "category": "",
+        "demo_url": "//crafti.axiomthemes.com/"
+    },
+    "bakery": {
+        "title": "Bakery",
+        "version": "1.3",
+        "demo_url": "//bakery.crafti.axiomthemes.com/",
+        "uploaded": "2022-12-27",
+        "updated": "2024-06-21",
+        "checked": "2024-07-09 07:56:17"
+    }
+}

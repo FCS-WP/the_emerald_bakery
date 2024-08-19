@@ -1,0 +1,79 @@
+/* QW Extension
+------------------------------------------------------------------------------------ */
+/* More Link for Stylish & Panel & Plaque & Tricolore & Nodes & Card */
+.sc_services_qw-stylish .sc_services_item .sc_services_item_more_link,
+.sc_services_qw-plaque .sc_services_item .sc_services_item_more_link,
+.sc_services_qw-tricolore .sc_services_item .sc_services_item_more_link,
+.sc_services_qw-nodes .sc_services_item .sc_services_item_more_link,
+.sc_services_qw-card .sc_services_item .sc_services_item_more_link,
+.sc_services_qw-panel .sc_services_item .sc_services_item_more_link {
+  outline: none;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+/* Text for Stylish & Panel & Plaque & Tricolore & Nodes & Card*/
+.sc_services_qw-tricolore .sc_services_item .sc_services_item_text,
+.sc_services_qw-stylish .sc_services_item .sc_services_item_text,
+.sc_services_qw-plaque .sc_services_item .sc_services_item_text,
+.sc_services_qw-card .sc_services_item .sc_services_item_text,
+.sc_services_qw-nodes .sc_services_item .sc_services_item_text,
+.sc_services_qw-panel .sc_services_item .sc_services_item_text {
+  outline: none;
+}
+
+/* Portfolio categories */
+.sc_portfolio.sc_portfolio_qw-case .post_meta .post_meta_item.post_categories,
+.sc_portfolio.sc_portfolio_qw-board .post_meta .post_meta_item.post_categories,
+.sc_portfolio.sc_portfolio_qw-pack .post_meta .post_meta_item.post_categories {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: var(--theme-font-p_font-family);
+}
+
+/* Services */
+.sc_services_qw-card .sc_services_item .sc_services_item_more_link .link_icon {
+  top: 0;
+}
+
+.sc_services_qw-panel .sc_services_item .sc_services_item_number,
+.sc_services_qw-panel .sc_services_item .sc_services_item_number.duplicate {
+  font-weight: 400;
+}
+.sc_services_qw-panel .sc_services_item .sc_services_item_title {
+  font-size: 2.059em;
+}
+
+.sc_services_qw-price .sc_services_item_price,
+.sc_services_qw-price .sc_services_item_title {
+  font-weight: 500;
+}
+.sc_services_qw-price .sc_services_item_number {
+  margin-top: -10%;
+  font-weight: 500;
+}
+
+.sc_services_qw-stylish .sc_services_item .sc_services_item_more_link {
+  bottom: 1px;
+}
+
+/* Portfolio */
+.sc_portfolio.sc_portfolio_qw-board .sc_portfolio_item .post_featured .post_info .post_title:before {
+  bottom: 7px;
+}
+
+.sc_portfolio.sc_portfolio_qw-case .sc_portfolio_item .sc_portfolio_item_content .post-more-link {
+  font-size: 17px;
+}
+.sc_portfolio.sc_portfolio_qw-case .sc_portfolio_item .sc_portfolio_item_content .post-more-link:after {
+  top: -4px;
+}
+
+.sc_portfolio.sc_portfolio_qw-simple .sc_portfolio_item_content .number {
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=trx_addons-qw-extension.css.map */

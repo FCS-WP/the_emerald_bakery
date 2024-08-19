@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIA,yBAAoB;EAGnB,uCAAwC;ICibvC,sBAAqB,EDhbG,MAAM;ICgb9B,kBAAqB,EDhbG,MAAM;ICkb/B,cAAc,EDlbW,MAAM;;;EAE/B;;sCAEqC;IACpC,KAAK,EAAE,IAAI;;;EAEZ,sCAAuC;IC8brC,mBAAkB,ED7bO,UAAU;IC2bnC,cAAc,EAAqB,KAAK;IAK1C,WAAW,EDhcgB,UAAU;;;EAErC;sCACqC;IACpC,UAAU,EAAE,GAAG",
+"sources": ["properties.responsive.scss","../../../../../css/_mixins.scss"],
+"names": [],
+"file": "properties.responsive.css"
+}

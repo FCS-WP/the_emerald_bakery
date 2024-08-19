@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEC,qDAA2B;EAC1B,OAAO,EAAE,YAAY;EACrB,UAAU,EAAE,MAAM;;AAGnB,+EAAqD;EACpD,UAAU,EAAE,sBAAsB;;;AAIpC,8CAA+C;EAC9C,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;;;AAGhB,kEAAmE;EAClE,YAAY,EAAE,GAAG",
+"sources": ["IconList.scss"],
+"names": [],
+"file": "IconList.css"
+}

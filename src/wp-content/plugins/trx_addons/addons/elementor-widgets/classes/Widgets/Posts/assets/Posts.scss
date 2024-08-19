@@ -1,0 +1,239 @@
+.trx-addons-posts {
+	h1,h2,h3,h4,h5,h6,p {
+		margin: 0;
+	}
+}
+
+.trx-addons-posts-equal-height-yes .trx-addons-post {
+	height: 100%;
+}
+
+.trx-addons-post .trx-addons-post-title {
+	font-size: 26px;
+}
+
+.trx-addons-post .trx-addons-post-title a {
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+}
+
+.trx-addons-post-thumbnail img {
+	width: 100%;
+	transition: all .25s linear;
+}
+
+.trx-addons-posts-thumbnail-ratio .trx-addons-post-thumbnail-wrap {
+	position: relative;
+}
+
+.trx-addons-posts-thumbnail-ratio .trx-addons-post-thumbnail-wrap img {
+	position: absolute;
+	-o-object-fit: cover;
+	object-fit: cover;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+}
+
+.trx-addons-posts-align-buttons .trx-addons-post {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.trx-addons-posts-align-buttons .trx-addons-post-content-wrap {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+}
+
+.trx-addons-posts-align-buttons .trx-addons-post-content {
+	flex-grow: 1;
+}
+
+.trx-addons-posts-align-buttons.trx-addons-posts-skin-event .trx-addons-posts-button {
+	align-self: center;
+}
+
+.trx-addons-post-separator-wrap {
+	margin-bottom: 15px;
+}
+
+.trx-addons-post-separator {
+	background: #e6e6e6;
+	height: 1px;
+	width: 100%;
+}
+
+.trx-addons-post-terms {
+	transition: all 0.25s linear 0s;
+	display: inline-block;
+}
+
+.trx-addons-post-terms a {
+	color: inherit;
+}
+
+.trx-addons-posts-pagination a,
+.trx-addons-posts-pagination .page-numbers {
+	display: inline-block;
+}
+
+.trx-addons-posts-infinite-scroll .trx-addons-posts-pagination-wrap {
+	display: none;
+}
+
+.trx-addons-search-form-container {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.trx-addons-search-form {
+	display: flex;
+	transition: .2s;
+	overflow: hidden;
+	border: 0 solid transparent;
+	margin-bottom: 20px;
+	min-height: 50px;
+	max-width: 400px;
+	width: 100%;
+}
+
+.trx-addons-search-form button,
+.trx-addons-search-form input[type=search] {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	display: inline-block;
+	vertical-align: middle;
+	white-space: normal;
+	background: none;
+	line-height: 1;
+	min-width: 0;
+	font-size: 15px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.trx-addons-search-form button:focus,
+.trx-addons-search-form input[type=search]:focus {
+	outline: 0;
+}
+
+.trx-addons-search-form input[type=search] {
+	background: #eceeef;
+	height: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	flex-basis: 100%;
+	color: #55595c;
+	transition: color .2s;
+}
+
+.trx-addons-search-form button {
+	background-color: #818a91;
+	font-size: 16px;
+	color: #fff;
+	border-radius: 0;
+	min-width: 50px;
+}
+
+.trx-addons-search-form .trx-addons-search-form-input:-ms-input-placeholder {
+	color: inherit;
+	font-family: inherit;
+	opacity: 0.6;
+}
+
+.trx-addons-search-form .trx-addons-search-form-input::-moz-placeholder {
+	color: inherit;
+	font-family: inherit;
+	opacity: 0.6;
+}
+
+.trx-addons-search-form .trx-addons-search-form-input::placeholder {
+	color: inherit;
+	font-family: inherit;
+	opacity: 0.6;
+}
+
+.trx-addons-search-form-text .trx-addons-search-form-submit {
+	flex-shrink: 0;
+}
+
+.trx-addons-loader,
+.trx-addons-posts-loader {
+	width: 46px;
+	height: 46px;
+}
+
+.trx-addons-loader {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: 2;
+}
+
+.trx-addons-posts-loader {
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.trx-addons-loader:after,
+.trx-addons-posts-loader:after {
+	content: " ";
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 1px;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	border-color: #000 transparent #000 transparent;
+	-webkit-animation: trx-addons-loader-dual-ring 1.2s linear infinite;
+	animation: trx-addons-loader-dual-ring 1.2s linear infinite;
+}
+
+.trx-addons-loader:after {
+	width: 46px;
+	height: 46px;
+}
+
+@-webkit-keyframes trx-addons-loader-dual-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes trx-addons-loader-dual-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.trx-addons-loader-overlay {
+	background: rgba(255, 255, 255, 0.5);
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+}

@@ -1,0 +1,18 @@
+.trx-addons-list-container .trx-addons-icon-list-icon {
+  display: inline-block;
+  text-align: center;
+}
+.trx-addons-list-container .trx-addons-list-items li .trx-addons-icon-list-text {
+  transition: color 0.2s ease-in-out;
+}
+
+.trx-addons-list-items.trx-addons-inline-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trx-addons-list-items.trx-addons-inline-items li:not(:last-child) {
+  margin-right: 8px;
+}
+
+/*# sourceMappingURL=IconList.css.map */

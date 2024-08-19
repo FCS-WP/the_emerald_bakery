@@ -1,0 +1,8 @@
+@import "../../css/_mixins.scss";
+@import "../../css/_theme-vars.scss";
+@import "css/_skin-vars.scss";
+
+
+.top_panel .sc_layouts_row_fixed_on {
+	@include box-shadow(0 0 12px 0 rgba(0, 0, 0, 0.03));
+}
